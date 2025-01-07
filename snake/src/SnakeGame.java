@@ -35,7 +35,7 @@ class DashboardPage extends JPanel {
         // Set preferred size for the panel
         setPreferredSize(new Dimension(300, 300));
 
-        JButton startButton = new JButton("Start Game");
+        JButton startButton = new JButton("Start the Game");
         startButton.setFont(new Font("Helvetica", Font.BOLD, 16));
         startButton.setFocusPainted(false);
         startButton.addActionListener(e -> {
