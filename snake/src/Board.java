@@ -109,7 +109,8 @@ class Board extends JPanel implements ActionListener {
 
             if(currentLevel==5){
                 g.setColor(Color.blue);
-                g.fillRect(150, 150, 100, 100);
+                g.fillRect(100, 100, 100, 100);
+
             }
 
             // Draw scoreboard
@@ -183,10 +184,10 @@ class Board extends JPanel implements ActionListener {
         if (x[0] == apple_x && y[0] == apple_y) {
             dots++;
             locateApple();
-            if (dots == 10) currentLevel = 2; // Move to Level 2
-            if (dots == 25) currentLevel = 3; // Move to Level 3
-            if (dots == 37) currentLevel = 4; // Move to Level 4
-            if (dots == 50) currentLevel = 5; // Move to Level 5
+            if (dots == 10) currentLevel = 2; // Move to Level 10
+            if (dots == 25) currentLevel = 3; // Move to Level 25
+            if (dots == 37) currentLevel = 4; // Move to Level 37
+            if (dots == 50) currentLevel = 5; // Move to Level 50
         }
     }
 
@@ -236,7 +237,7 @@ class Board extends JPanel implements ActionListener {
         }
 
         if(currentLevel==5){
-            if(x[0]==150 && y[0]==150){
+            if(x[0]==100 && y[0]==100){      
                 inGame=false;
             }
         }
